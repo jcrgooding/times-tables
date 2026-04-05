@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Times Tables!</title>
+<title>Immy's Times Tables!</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -45,6 +45,44 @@
     border-radius: 28px;
     padding: 36px 32px;
     box-shadow: 0 8px 40px rgba(124,58,237,0.12), 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .immy-banner {
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
+    border-radius: 18px;
+    padding: 20px 20px 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .immy-banner::before {
+    content: '✦ ✦ ✦';
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.55rem;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 8px;
+  }
+
+  .immy-name {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+    color: white;
+    line-height: 1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .immy-sub {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 4px;
   }
 
   h1 {
@@ -397,7 +435,10 @@
 <!-- WELCOME SCREEN -->
 <div class="screen active" id="screen-welcome">
   <div class="card">
-    <h1>⭐ Times Tables!</h1>
+    <div class="immy-banner">
+      <div class="immy-name">Immy's</div>
+      <div class="immy-sub">Times Tables ⭐</div>
+    </div>
     <p class="subtitle">Let's practise and have fun!</p>
 
     <p class="section-label">Which tables?</p>
